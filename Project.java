@@ -181,6 +181,17 @@ public class Project {
         }
         System.out.println("Thank you for playing");
         System.out.println("Here is your record for this session" + userRecord);
+        int winCount=0;
+        int lossCount=0;
+        for (String i:userRecord){
+            if (i.equals("Win")){
+                winCount+=1;
+            }
+            else{
+                lossCount+=1;
+            }
+        }
+        System.out.println("Wins: "+winCount+"\nLoss: "+ lossCount);
     }
 }
 
