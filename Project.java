@@ -73,7 +73,7 @@ public class Project {
                     userTurn = false;
                 } 
                 else if (userChoice.equals("3")) {
-                    double userDoubleDown = user.DoubleDown();
+                    double userDoubleDown = user.doubleDown();
                     casino.addPot(userDoubleDown);
                     System.out.println("You have chosen to DoubleDown by $" + userDoubleDown);
                     if (user.getBalance()==0){
@@ -300,7 +300,7 @@ class Player extends Game {
     public String getName(){
         return this.name;
     }
-    public double DoubleDown(){
+    public double doubleDown(){
     double userBet=0;
         do{
             try{
