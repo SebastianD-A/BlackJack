@@ -117,13 +117,13 @@ public class Project {
                 if (dealer.checkOver21()){
                     System.out.println("Dealer went over 21!! You Won!! Good Job");
                     dealer.addLoss();
-                    user.Win(casino.getPot()*1.1);
+                    user.win(casino.getPot()*1.1);
                 }
                 else{
                     if (user.getHandTotal()>dealer.getHandTotal()){
                         System.out.println("You beat the dealer's hand!! Good job!!");
                         dealer.addLoss();
-                        user.Win(casino.getPot()*1.1);
+                        user.win(casino.getPot()*1.1);
                     }
 
                     else if (user.getHandTotal()<dealer.getHandTotal()){
@@ -131,7 +131,7 @@ public class Project {
                         System.out.println("You could've won $"+(casino.getPot()*1.1)+" but oh well, nice try");
                     }
                     else {
-                        user.Win(casino.getPot());
+                        user.win(casino.getPot());
                         System.out.println("Its a tie, you will get your the pot back");
                         }
                     }
@@ -329,7 +329,7 @@ class Player extends Game {
         return amount;
     }
 
-    public void Win(double amount){
+    public void win(double amount){
         this.balance+=(amount);
         System.out.println("$"+amount+" was added to your balance");
     }
