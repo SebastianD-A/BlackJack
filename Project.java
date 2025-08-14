@@ -30,12 +30,7 @@ public class Project {
             //Game Start
             System.out.println("Round " + roundCount);
             casino.clearPot();
-            if (user.getBalance()<150){
-                casino.addPot(user.allIn());
-            }
-            else{
-                casino.addPot(150);
-            }
+            casino.addPot(150);
             //start game
             user.start();
             dealer.start();
@@ -143,7 +138,7 @@ public class Project {
                 }                
             roundCount+=1;
             //check first if the user can even go to a next round
-            if (user.getBalance()<5){
+            if (user.getBalance()<=149){
                 System.out.println("You can't afford the minimum buy in for each hand, sadly you lose :<");
                 isRunning=false;
                 break;
