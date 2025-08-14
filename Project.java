@@ -346,7 +346,7 @@ class Dealer extends Game{
     Dealer(){
         super("Dealer");
         this.name="Bob";
-        this.possibleNames=new String[]{"Bob","Max", "Richie", "Jewaldo", "Darvell","Gewaldo", "Toaster","Panasonic", "RichMillion", "Joe", "Sonic"};
+        this.possibleNames=new String[]{"Bob","Max", "Richie", "Pewaldo", "Darvell","Gewaldo", "Toaster","Panasonic", "RichMillion", "Joe", "Sonic"};
     }
     @Override
     //ensure dealer does not immediately get black jack
