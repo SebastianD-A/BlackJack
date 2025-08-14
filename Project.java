@@ -354,8 +354,8 @@ class Dealer extends Game{
         if (dealerLossCount>3){
             this.name=possibleNames[random.nextInt(this.possibleNames.length)];
             dealerLossCount=0;
-            System.out.println("Your previous dealer was fired for losing too much money");
-            System.out.println("But its okay! My name is "+this.name);
+            System.out.println("Sorry about this but your previous dealer was fired for losing too much money");
+            System.out.println("But its okay, I'm your new dealer! My name is "+this.name);
         }
         super.start();
         while (handTotal==21){
