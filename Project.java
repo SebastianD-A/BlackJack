@@ -9,6 +9,7 @@ public class Project {
         boolean isRunning = true;
         Dealer dealer = new Dealer();
         Game casino = new Game("Casino");
+        ArrayList<String> userRecord = new ArrayList<>();
         CardCounter cardCount;
 
         System.out.println("""
@@ -136,7 +137,13 @@ public class Project {
                         System.out.println("Its a tie, you will get your the pot back");
                         }
                     }
-                }                
+                }
+            if (userLose) {
+                userRecord.add("Loss");
+            }
+            else{
+                userRecord.add("Win");
+            }                
             roundCount+=1;
             //check first if the user can even go to a next round
             if (user.getBalance()<=149){
@@ -173,6 +180,7 @@ public class Project {
             }
         }
         System.out.println("Thank you for playing");
+        System.out.println("Here is your record for this session" + userRecord);
     }
 }
 
