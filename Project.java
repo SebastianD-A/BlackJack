@@ -196,6 +196,7 @@ class Game{
         this.cardOptions = new String[13];
         this.cardValues = new HashMap<String, Integer>();
         this.random = new Random();
+        this.role=role;
         this.totalPot = 0;
         cardSetup();
     }
@@ -339,7 +340,7 @@ class Player extends Game {
     }
     @Override
     public String toString(){
-        return this.name+" (Player) hand: "+ this.hand+"\n Hand total: " + this.handTotal;
+        return this.name+" ("+this.role+") "+"hand: "+ this.hand+"\n Hand total: " + this.handTotal;
     }
 }
 
