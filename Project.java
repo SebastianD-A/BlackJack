@@ -36,9 +36,9 @@ public class Project {
             user.start();
             dealer.start();
             //initialize card counter here to ensure the arrayList is filled
-            cardCount = new CardCounter(user, dealer);
 
             while (userTurn){
+            cardCount = new CardCounter(user, dealer);
             System.out.println("_______________________");
             System.out.println("Total pot: $" + casino.getPot());
             System.out.println(dealer);
