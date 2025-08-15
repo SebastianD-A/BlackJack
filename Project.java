@@ -113,7 +113,7 @@ public class Project {
             if (userTurn==false && userLose==false){
                 System.out.println("____________________________________________");
                 dealer.play();
-                System.out.println(dealer.getName()+" (Dealer) hand: "+dealer.getHand()+"\n Total: "+dealer.getHandTotal());
+                System.out.println(dealer.getName()+" (Dealer) hand: "+dealer.getHand()+"\n Hand Total: "+dealer.getHandTotal());
                 System.out.println(user);
 
                 if (dealer.checkOver21()){
@@ -151,7 +151,6 @@ public class Project {
                 isRunning=false;
                 break;
             }
-
             boolean validAnswer = false;
             while (!validAnswer){
                 System.out.println("_______________________________________");
