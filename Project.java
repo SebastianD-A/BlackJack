@@ -96,7 +96,7 @@ public class Project {
                     System.out.println("ALL IN!!!!");
                     user.hit();
                     System.out.println(user);
-                    if (user.getHandTotal()>21){
+                    if (user.checkOver21()){
                         userLose=true;
                     }
                     userTurn = false;
