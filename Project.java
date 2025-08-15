@@ -35,7 +35,6 @@ public class Project {
             //start game
             user.start();
             dealer.start();
-            //initialize card counter here to ensure the arrayList is filled
 
             while (userTurn){
             cardCount = new CardCounter(user, dealer);
