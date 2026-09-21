@@ -1,1 +1,1 @@
-This project is not optimal, school won't let me optimize it because it wasn't taught in class 💔
+This repo was made for my Prog 1 assessment 
